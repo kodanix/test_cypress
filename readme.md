@@ -1,4 +1,4 @@
-#Házi feladat
+# Házi feladat
 
 A project clone-ozása után a `yarn install` majd `yarn start` paranccsal futtatható.
 
