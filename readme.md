@@ -2,13 +2,13 @@
 
 
 ## A project futtatása
-A project futtatásának előfeltétele, hogy legyen telepítve NodeJS a gépedre.
+A project futtatásának előfeltétele, hogy legyen telepítve NodeJS és Git a gépedre.
 Az alábbi linkeken elérhetők a NodeJS telepítők:
 https://nodejs.org/en/download/
 
 A telepítés után a `node -v` és az `npm -v` parancsok segítségével tudjátok ellenőrizni, nhogy milyen `node` illetve `npm` verziók települtek.
 
-A project clone-ozása (`git clone git@github.com:Porter84/cypress-tutorial.git`) után a `yarn install` vagy `npm install` parancsok segítségével telepítsétek a `package.json` fájlban leírt függőségeket, majd a `yarn start` vagy az `npx cypress open` paranccsal futtatható. Ekkor elindul a Cypress desktop App, ahol a BDD scenario-ra duplán kattintva futtathatóak az egyes scenariók.
+A project clone-ozása (`git clone git@github.com:Porter84/cypress-tutorial.git`) után a `yarn install` vagy `npm install` parancsok segítségével telepítsétek a `package.json` fájlban leírt függőségeket, majd az `npx cypress open` paranccsal futtatható. Ekkor elindul a Cypress desktop App, ahol a BDD scenario-ra duplán kattintva futtathatóak az egyes scenariók.
 
 ## Beadandó feladatok
 Készíts további legalább tíz darab BDD Scenariot egy általad válaszott weboldalhoz, majd készítsd el a hozzá tartozó Cypress teszteket az órán megbeszéltek alapján.
