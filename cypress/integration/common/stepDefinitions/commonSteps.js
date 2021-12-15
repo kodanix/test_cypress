@@ -25,7 +25,7 @@ And('I click the HU button', () => {
 And('I submit my Neptun code and password and click on login', () => {
   cy.get('#username').type('asd')
   cy.get('#password').type('asd1')
-  cy.wait(1000)
+  cy.wait(5000)
   cy.get('#loginleft > div > div.inputs > input[type=submit]:nth-child(7)').click()
 });
 
@@ -41,4 +41,13 @@ And('Type in the search input', () => {
   cy.get('#mainsearch_form > input[type=text]:nth-child(2)').type('Kovács Dániel')
                             .type('{enter}')
 });
+
+And('I click on the link', () => {
+  cy.get('#sec_bigvmenu > ul > li > a').click()
+});
+
+And('I click on the folder menu', () => {
+  cy.get('#header3 > ul > li.menu_folder > a').click()
+});
+
 
