@@ -42,3 +42,26 @@ Feature: Visiting CooSpace and testing it
     And I submit my Neptun code and password and click on login
     And Type in the search input
     Then Validate the page url as 'https://www.coosp.etr.u-szeged.hu/Search?Mode=&query=Kov%C3%A1cs+D%C3%A1niel'
+
+  @test
+  Scenario: Login to coospace and checking if 'ahova jelentkezhetek' menu works
+    Given I navigate to coospace
+    And I submit my Neptun code and password and click on login
+    And I click on the link
+    Then Validate the page url as 'https://www.coosp.etr.u-szeged.hu/Home/JoinableScenes'
+
+  @test
+  Scenario: Login to coospace and checking if in 'ahova jelentkezhetek' menu the 'vissza' button works
+    Given I navigate to coospace
+    And I submit my Neptun code and password and click on login
+    And I click on the link
+    And I click on the link
+    Then Validate the page url as 'https://www.coosp.etr.u-szeged.hu/Home'
+
+  @test
+  Scenario: Login to coospace and checking my folder
+    Given I navigate to coospace
+    And I submit my Neptun code and password and click on login
+    And I click on the folder menu
+    Then Validate the page url as 'https://www.coosp.etr.u-szeged.hu/My/Folder'
+
